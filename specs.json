@@ -1,0 +1,46 @@
+{
+  "information": {
+    "id": "imagenet-classifier",
+    "name": "imagenet-classifier",
+    "description": "Template block for custom computations.",
+    "system_versions": [
+      "0.1"
+    ],
+    "block_version": "block version number",
+    "block_source": "core/blocks/imagenet-classifier",
+    "block_type": "compute"
+  },
+  "inputs": {
+  
+  },
+  "outputs": {
+    "result": {
+      "type": "List[file]",
+      "connections": [],
+      "relays": []
+    }
+  },
+  "action": {
+    "container": {
+      "image": "imagenet-classifier",
+      "version": "imagenet-classifier",
+      "command_line": [
+        "python",
+        "entrypoint.py"
+      ]
+    }
+  },
+  "views": {
+    "node": {
+      "behavior": "modal",
+      "active": "True or False",
+      "title_bar": {},
+      "preview": {},
+      "html": "",
+      "pos_x": "1464",
+      "pos_y": "256.609375",
+      "pos_z": "999"
+    }
+  },
+  "events": {}
+}

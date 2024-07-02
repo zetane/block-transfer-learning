@@ -1,0 +1,4 @@
+transformers==4.38.1
+pillow==10.2.0
+numpy==1.26.4
+scikit-learn==1.4.1.post1
